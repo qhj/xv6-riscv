@@ -60,10 +60,11 @@
                 helix
                 qemu
                 bc
+                bear
+                llvmPackages_21.clang-tools
               ]
               ++ (with crossPkgs; [
                 buildPackages.gcc
-                buildPackages.binutils
               ]);
             shellHook = ''
               # export TOOLPREFIX=riscv64-unknown-none-elf-
